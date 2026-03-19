@@ -43,6 +43,9 @@ do
     elif [[ "${PROVIDER}" == "OPENDNS" ]]
     then
         ip=$(opendns_ipv4)
+    elif [[ "${PROVIDER}" == "APIFY" ]]
+    then
+        ip=$(apify_ipv4)
     else
         ip=$(cloudflare_ipv4)
     fi
