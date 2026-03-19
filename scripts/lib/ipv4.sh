@@ -39,7 +39,7 @@ function opendns_ipv4()
     echo $ip
 }
 
-function apify_ipv4()
+function ipify_ipv4()
 {
     local ip=""
     ip=$(curl -s -k https://api.ipify.org | tr -d '"')
